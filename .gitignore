@@ -1,0 +1,44 @@
+# Crear o editar el archivo .gitignore
+cat > .gitignore << EOF
+# Entornos virtuales
+venv/
+.env
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Streamlit
+.streamlit/
+
+# API keys
+*_key.txt
+*_key.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Datos procesados (opcional)
+data/processed/
+EOF

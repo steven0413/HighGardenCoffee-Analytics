@@ -1,0 +1,15 @@
+data:
+  raw_path: "data/raw/coffee_consumption_historical.csv"
+  processed_path: "data/processed/coffee_consumption_processed.parquet"
+
+preprocessing:
+  date_column: "year"
+  country_column: "country"
+  coffee_type_column: "coffee_type"
+  consumption_column: "consumption_cups"
+  min_date: "1990"
+  max_date: "2020"
+
+features:
+  lag_features: [1, 2, 3, 6, 12]
+  rolling_windows: [3, 6, 12]
