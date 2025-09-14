@@ -13,9 +13,8 @@ class CoffeeDataProcessor:
         
     def load_data(self):
         """Load raw coffee consumption data"""
-        # Obtener la ruta absoluta del archivo
-        # Usar el directorio actual como base en lugar de subir dos niveles
-        base_dir = os.getcwd()  # Cambio importante: usar el directorio actual
+        # Ruta absoluta del archivo
+        base_dir = os.getcwd()  # usar el directorio actual
         raw_path = os.path.join(base_dir, self.config['data']['raw_path'])
         
         print(f"Loading data from: {raw_path}")

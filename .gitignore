@@ -1,4 +1,4 @@
-# Crear o editar el archivo .gitignore
+# Crear archivo .gitignore
 cat > .gitignore << EOF
 # Entornos virtuales
 venv/
@@ -39,6 +39,6 @@ MANIFEST
 # VS Code
 .vscode/
 
-# Datos procesados (opcional)
+# Datos procesados
 data/processed/
 EOF

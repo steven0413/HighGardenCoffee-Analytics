@@ -21,5 +21,3 @@ def setup_logging(log_file="coffee_analysis.log"):
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
     return logging.getLogger(__name__)
-
-# Otras funciones utilitarias que puedas necesitar...

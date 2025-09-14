@@ -1,4 +1,3 @@
-# src/basic_dashboard.py
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -8,13 +7,12 @@ import warnings
 from dotenv import load_dotenv
 from generative_ai_chatbot import CoffeeAnalyticsChatbot
 
-
 warnings.filterwarnings('ignore')
 
-# Cargar variables de entorno
+# variables de entorno
 load_dotenv()
 
-# Agregar el directorio src al path para importaciones
+# Directorio src al path para importaciones
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils import load_config
@@ -105,7 +103,7 @@ def main():
     # Sección del Chatbot Analítico
     st.sidebar.header("🤖 Chatbot Analítico")
     
-    # Obtener API key de variables de entorno o input de usuario
+    # Obtener API key de variables de entorno
     api_key = os.getenv("OPENAI_API_KEY")
     
     if not api_key:
